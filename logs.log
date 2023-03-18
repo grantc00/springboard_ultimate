@@ -1,0 +1,1875 @@
+2023-03-17 17:28:12,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:28:12,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:28:12,139:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:28:12,140:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:28:12,757:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-17 17:33:20,820:INFO:PyCaret ClassificationExperiment
+2023-03-17 17:33:20,821:INFO:Logging name: clf-default-name
+2023-03-17 17:33:20,821:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-03-17 17:33:20,821:INFO:version 3.0.0.rc8
+2023-03-17 17:33:20,821:INFO:Initializing setup()
+2023-03-17 17:33:20,822:INFO:self.USI: 8a69
+2023-03-17 17:33:20,822:INFO:self._variable_keys: {'log_plots_param', 'fix_imbalance', 'data', 'pipeline', 'X_train', 'X_test', 'y', 'n_jobs_param', 'exp_name_log', 'idx', 'X', 'html_param', 'logging_param', 'target_param', 'fold_generator', 'y_train', 'fold_groups_param', 'y_test', '_available_plots', 'gpu_param', 'gpu_n_jobs_param', 'fold_shuffle_param', '_ml_usecase', 'USI', 'memory', 'exp_id', 'seed', 'is_multiclass'}
+2023-03-17 17:33:20,822:INFO:Checking environment
+2023-03-17 17:33:20,822:INFO:python_version: 3.8.16
+2023-03-17 17:33:20,822:INFO:python_build: ('default', 'Jan 17 2023 16:42:09')
+2023-03-17 17:33:20,822:INFO:machine: x86_64
+2023-03-17 17:33:20,822:INFO:platform: macOS-10.16-x86_64-i386-64bit
+2023-03-17 17:33:20,822:INFO:Memory: svmem(total=17179869184, available=715251712, percent=95.8, used=1477599232, free=16330752, active=704544768, inactive=698511360, wired=773054464)
+2023-03-17 17:33:20,822:INFO:Physical Core: 10
+2023-03-17 17:33:20,822:INFO:Logical Core: 10
+2023-03-17 17:33:20,823:INFO:Checking libraries
+2023-03-17 17:33:20,823:INFO:System:
+2023-03-17 17:33:20,823:INFO:    python: 3.8.16 (default, Jan 17 2023, 16:42:09)  [Clang 14.0.6 ]
+2023-03-17 17:33:20,823:INFO:executable: /Users/grant/opt/anaconda3/envs/sbcapstone1/bin/python
+2023-03-17 17:33:20,823:INFO:   machine: macOS-10.16-x86_64-i386-64bit
+2023-03-17 17:33:20,823:INFO:PyCaret required dependencies:
+2023-03-17 17:33:20,823:INFO:                 pip: 22.3.1
+2023-03-17 17:33:20,823:INFO:          setuptools: 65.6.3
+2023-03-17 17:33:20,823:INFO:             pycaret: 3.0.0rc8
+2023-03-17 17:33:20,823:INFO:             IPython: 8.8.0
+2023-03-17 17:33:20,823:INFO:          ipywidgets: 8.0.4
+2023-03-17 17:33:20,823:INFO:                tqdm: 4.64.1
+2023-03-17 17:33:20,823:INFO:               numpy: 1.23.5
+2023-03-17 17:33:20,823:INFO:              pandas: 1.5.3
+2023-03-17 17:33:20,823:INFO:              jinja2: 3.1.2
+2023-03-17 17:33:20,823:INFO:               scipy: 1.10.0
+2023-03-17 17:33:20,823:INFO:              joblib: 1.2.0
+2023-03-17 17:33:20,823:INFO:             sklearn: 1.1.3
+2023-03-17 17:33:20,823:INFO:                pyod: 1.0.7
+2023-03-17 17:33:20,823:INFO:            imblearn: 0.10.1
+2023-03-17 17:33:20,823:INFO:   category_encoders: 2.6.0
+2023-03-17 17:33:20,823:INFO:            lightgbm: 3.3.4
+2023-03-17 17:33:20,823:INFO:               numba: 0.56.4
+2023-03-17 17:33:20,823:INFO:            requests: 2.28.2
+2023-03-17 17:33:20,824:INFO:          matplotlib: 3.6.3
+2023-03-17 17:33:20,824:INFO:          scikitplot: 0.3.7
+2023-03-17 17:33:20,824:INFO:         yellowbrick: 1.5
+2023-03-17 17:33:20,824:INFO:              plotly: 5.12.0
+2023-03-17 17:33:20,824:INFO:             kaleido: 0.2.1
+2023-03-17 17:33:20,824:INFO:         statsmodels: 0.13.5
+2023-03-17 17:33:20,824:INFO:              sktime: 0.15.1
+2023-03-17 17:33:20,824:INFO:               tbats: 1.1.2
+2023-03-17 17:33:20,824:INFO:            pmdarima: 2.0.2
+2023-03-17 17:33:20,824:INFO:              psutil: 5.9.4
+2023-03-17 17:33:20,824:INFO:PyCaret optional dependencies:
+2023-03-17 17:33:20,829:INFO:                shap: Not installed
+2023-03-17 17:33:20,847:INFO:           interpret: Not installed
+2023-03-17 17:33:20,847:INFO:                umap: Not installed
+2023-03-17 17:33:20,847:INFO:    pandas_profiling: Not installed
+2023-03-17 17:33:20,847:INFO:  explainerdashboard: Not installed
+2023-03-17 17:33:20,847:INFO:             autoviz: Not installed
+2023-03-17 17:33:20,847:INFO:           fairlearn: Not installed
+2023-03-17 17:33:20,847:INFO:             xgboost: 1.7.4
+2023-03-17 17:33:20,847:INFO:            catboost: 1.1.1
+2023-03-17 17:33:20,847:INFO:              kmodes: Not installed
+2023-03-17 17:33:20,847:INFO:             mlxtend: Not installed
+2023-03-17 17:33:20,847:INFO:       statsforecast: Not installed
+2023-03-17 17:33:20,847:INFO:        tune_sklearn: Not installed
+2023-03-17 17:33:20,847:INFO:                 ray: Not installed
+2023-03-17 17:33:20,847:INFO:            hyperopt: Not installed
+2023-03-17 17:33:20,847:INFO:              optuna: Not installed
+2023-03-17 17:33:20,847:INFO:               skopt: Not installed
+2023-03-17 17:33:20,847:INFO:              mlflow: Not installed
+2023-03-17 17:33:20,847:INFO:              gradio: Not installed
+2023-03-17 17:33:20,847:INFO:             fastapi: Not installed
+2023-03-17 17:33:20,847:INFO:             uvicorn: Not installed
+2023-03-17 17:33:20,847:INFO:              m2cgen: Not installed
+2023-03-17 17:33:20,848:INFO:           evidently: 0.2.5
+2023-03-17 17:33:20,848:INFO:                nltk: 3.8.1
+2023-03-17 17:33:20,848:INFO:            pyLDAvis: Not installed
+2023-03-17 17:33:20,848:INFO:              gensim: Not installed
+2023-03-17 17:33:20,848:INFO:               spacy: Not installed
+2023-03-17 17:33:20,848:INFO:           wordcloud: Not installed
+2023-03-17 17:33:20,848:INFO:            textblob: Not installed
+2023-03-17 17:33:20,848:INFO:               fugue: Not installed
+2023-03-17 17:33:20,848:INFO:           streamlit: Not installed
+2023-03-17 17:33:20,848:INFO:             prophet: 1.1.1
+2023-03-17 17:33:20,848:INFO:None
+2023-03-17 17:33:20,848:INFO:Set up GPU usage.
+2023-03-17 17:33:20,848:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:20,848:WARNING:cuML is outdated or not found. Required version is >=22.10, got 3.0.0.rc8
+2023-03-17 17:33:20,848:INFO:Set up data.
+2023-03-17 17:33:20,934:INFO:Set up train/test split.
+2023-03-17 17:33:20,964:INFO:Set up index.
+2023-03-17 17:33:20,965:INFO:Set up folding strategy.
+2023-03-17 17:33:20,965:INFO:Assigning column types.
+2023-03-17 17:33:20,968:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-03-17 17:33:20,969:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,009:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-03-17 17:33:21,009:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,011:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,012:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:33:21,012:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,036:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,040:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,043:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:21,491:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:21,555:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,603:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-03-17 17:33:21,603:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,603:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,604:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:33:21,604:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,625:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,629:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,631:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:21,636:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:21,640:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-03-17 17:33:21,640:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,681:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:33:21,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,703:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,707:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,708:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:21,713:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:21,717:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,758:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,758:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,759:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:33:21,759:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,779:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,783:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,784:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:21,790:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:21,793:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-03-17 17:33:21,793:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,834:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,835:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,835:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,856:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,860:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,861:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:21,888:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:21,891:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,933:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,934:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,934:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,955:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,960:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:21,961:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:21,972:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:21,976:INFO:Preparing preprocessing pipeline...
+2023-03-17 17:33:21,979:INFO:Set up simple imputation.
+2023-03-17 17:33:21,984:INFO:Set up encoding of ordinal features.
+2023-03-17 17:33:21,987:INFO:Set up encoding of categorical features.
+2023-03-17 17:33:21,987:INFO:Set up imbalanced handling.
+2023-03-17 17:33:21,987:INFO:Set up feature selection.
+2023-03-17 17:33:21,987:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:22,029:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:22,029:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:22,029:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:22,050:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:22,054:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:22,055:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:22,061:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:28,923:INFO:Finished creating preprocessing pipeline.
+2023-03-17 17:33:28,938:INFO:Pipeline: Pipeline(memory=Memory(location=/var/folders/wk/1__f0f457zs4shb5sgjd_4x40000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['trips_in_first_30_days',
+                                             'avg_rating_of_driver',
+                                             'avg_surge', 'surge_pct',
+                                             'weekday_pct', 'avg_dist',
+                                             'avg_rating_by_driver'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=-1,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         silent='warn',
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False)
+2023-03-17 17:33:28,938:INFO:Creating final display dataframe.
+2023-03-17 17:33:31,844:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3           Original data shape   
+4        Transformed data shape   
+5   Transformed train set shape   
+6    Transformed test set shape   
+7              Ordinal features   
+8              Numeric features   
+9          Categorical features   
+10                   Preprocess   
+11              Imputation type   
+12           Numeric imputation   
+13       Categorical imputation   
+14     Maximum one-hot encoding   
+15              Encoding method   
+16                Fix imbalance   
+17         Fix imbalance method   
+18            Feature selection   
+19     Feature selection method   
+20  Feature selection estimator   
+21  Number of features selected   
+22               Fold Generator   
+23                  Fold Number   
+24                     CPU Jobs   
+25                      Use GPU   
+26               Log Experiment   
+27              Experiment Name   
+28                          USI   
+
+                                                Value  
+0                                                 123  
+1                                            retained  
+2                                              Binary  
+3                                         (41445, 11)  
+4                                          (39026, 3)  
+5                                          (26592, 3)  
+6                                          (12434, 3)  
+7                                                   1  
+8                                                   7  
+9                                                   2  
+10                                               True  
+11                                             simple  
+12                                               mean  
+13                                               mode  
+14                                                 25  
+15                                               None  
+16                                               True  
+17  TomekLinks(n_jobs=None, sampling_strategy='auto')  
+18                                               True  
+19                                            classic  
+20                                           lightgbm  
+21                                                0.2  
+22                                    StratifiedKFold  
+23                                                 10  
+24                                                 -1  
+25                                               True  
+26                                              False  
+27                                   clf-default-name  
+28                                               8a69  
+2023-03-17 17:33:31,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,894:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,895:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,895:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,915:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,920:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,921:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:31,936:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:31,940:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:31,981:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:32,001:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:32,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:33:32,008:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:33:32,017:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:33:32,020:INFO:setup() successfully completed in 11.22s...............
+2023-03-17 17:34:11,465:INFO:PyCaret ClassificationExperiment
+2023-03-17 17:34:11,465:INFO:Logging name: clf-default-name
+2023-03-17 17:34:11,466:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-03-17 17:34:11,466:INFO:version 3.0.0.rc8
+2023-03-17 17:34:11,466:INFO:Initializing setup()
+2023-03-17 17:34:11,466:INFO:self.USI: f8ca
+2023-03-17 17:34:11,466:INFO:self._variable_keys: {'log_plots_param', 'fix_imbalance', 'data', 'pipeline', 'X_train', 'X_test', 'y', 'n_jobs_param', 'exp_name_log', 'idx', 'X', 'html_param', 'logging_param', 'target_param', 'fold_generator', 'y_train', 'fold_groups_param', 'y_test', '_available_plots', 'gpu_param', 'gpu_n_jobs_param', 'fold_shuffle_param', '_ml_usecase', 'USI', 'memory', 'exp_id', 'seed', 'is_multiclass'}
+2023-03-17 17:34:11,466:INFO:Checking environment
+2023-03-17 17:34:11,466:INFO:python_version: 3.8.16
+2023-03-17 17:34:11,466:INFO:python_build: ('default', 'Jan 17 2023 16:42:09')
+2023-03-17 17:34:11,466:INFO:machine: x86_64
+2023-03-17 17:34:11,466:INFO:platform: macOS-10.16-x86_64-i386-64bit
+2023-03-17 17:34:11,466:INFO:Memory: svmem(total=17179869184, available=716021760, percent=95.8, used=1456332800, free=22888448, active=699764736, inactive=693035008, wired=756568064)
+2023-03-17 17:34:11,466:INFO:Physical Core: 10
+2023-03-17 17:34:11,466:INFO:Logical Core: 10
+2023-03-17 17:34:11,467:INFO:Checking libraries
+2023-03-17 17:34:11,467:INFO:System:
+2023-03-17 17:34:11,467:INFO:    python: 3.8.16 (default, Jan 17 2023, 16:42:09)  [Clang 14.0.6 ]
+2023-03-17 17:34:11,467:INFO:executable: /Users/grant/opt/anaconda3/envs/sbcapstone1/bin/python
+2023-03-17 17:34:11,467:INFO:   machine: macOS-10.16-x86_64-i386-64bit
+2023-03-17 17:34:11,467:INFO:PyCaret required dependencies:
+2023-03-17 17:34:11,467:INFO:                 pip: 22.3.1
+2023-03-17 17:34:11,467:INFO:          setuptools: 65.6.3
+2023-03-17 17:34:11,467:INFO:             pycaret: 3.0.0rc8
+2023-03-17 17:34:11,467:INFO:             IPython: 8.8.0
+2023-03-17 17:34:11,467:INFO:          ipywidgets: 8.0.4
+2023-03-17 17:34:11,467:INFO:                tqdm: 4.64.1
+2023-03-17 17:34:11,467:INFO:               numpy: 1.23.5
+2023-03-17 17:34:11,467:INFO:              pandas: 1.5.3
+2023-03-17 17:34:11,467:INFO:              jinja2: 3.1.2
+2023-03-17 17:34:11,467:INFO:               scipy: 1.10.0
+2023-03-17 17:34:11,467:INFO:              joblib: 1.2.0
+2023-03-17 17:34:11,467:INFO:             sklearn: 1.1.3
+2023-03-17 17:34:11,467:INFO:                pyod: 1.0.7
+2023-03-17 17:34:11,468:INFO:            imblearn: 0.10.1
+2023-03-17 17:34:11,468:INFO:   category_encoders: 2.6.0
+2023-03-17 17:34:11,468:INFO:            lightgbm: 3.3.4
+2023-03-17 17:34:11,468:INFO:               numba: 0.56.4
+2023-03-17 17:34:11,468:INFO:            requests: 2.28.2
+2023-03-17 17:34:11,468:INFO:          matplotlib: 3.6.3
+2023-03-17 17:34:11,468:INFO:          scikitplot: 0.3.7
+2023-03-17 17:34:11,468:INFO:         yellowbrick: 1.5
+2023-03-17 17:34:11,468:INFO:              plotly: 5.12.0
+2023-03-17 17:34:11,468:INFO:             kaleido: 0.2.1
+2023-03-17 17:34:11,468:INFO:         statsmodels: 0.13.5
+2023-03-17 17:34:11,468:INFO:              sktime: 0.15.1
+2023-03-17 17:34:11,468:INFO:               tbats: 1.1.2
+2023-03-17 17:34:11,468:INFO:            pmdarima: 2.0.2
+2023-03-17 17:34:11,468:INFO:              psutil: 5.9.4
+2023-03-17 17:34:11,468:INFO:PyCaret optional dependencies:
+2023-03-17 17:34:11,468:INFO:                shap: Not installed
+2023-03-17 17:34:11,468:INFO:           interpret: Not installed
+2023-03-17 17:34:11,468:INFO:                umap: Not installed
+2023-03-17 17:34:11,468:INFO:    pandas_profiling: Not installed
+2023-03-17 17:34:11,468:INFO:  explainerdashboard: Not installed
+2023-03-17 17:34:11,468:INFO:             autoviz: Not installed
+2023-03-17 17:34:11,468:INFO:           fairlearn: Not installed
+2023-03-17 17:34:11,468:INFO:             xgboost: 1.7.4
+2023-03-17 17:34:11,468:INFO:            catboost: 1.1.1
+2023-03-17 17:34:11,468:INFO:              kmodes: Not installed
+2023-03-17 17:34:11,468:INFO:             mlxtend: Not installed
+2023-03-17 17:34:11,468:INFO:       statsforecast: Not installed
+2023-03-17 17:34:11,468:INFO:        tune_sklearn: Not installed
+2023-03-17 17:34:11,468:INFO:                 ray: Not installed
+2023-03-17 17:34:11,469:INFO:            hyperopt: Not installed
+2023-03-17 17:34:11,469:INFO:              optuna: Not installed
+2023-03-17 17:34:11,469:INFO:               skopt: Not installed
+2023-03-17 17:34:11,469:INFO:              mlflow: Not installed
+2023-03-17 17:34:11,469:INFO:              gradio: Not installed
+2023-03-17 17:34:11,469:INFO:             fastapi: Not installed
+2023-03-17 17:34:11,469:INFO:             uvicorn: Not installed
+2023-03-17 17:34:11,469:INFO:              m2cgen: Not installed
+2023-03-17 17:34:11,469:INFO:           evidently: 0.2.5
+2023-03-17 17:34:11,469:INFO:                nltk: 3.8.1
+2023-03-17 17:34:11,469:INFO:            pyLDAvis: Not installed
+2023-03-17 17:34:11,469:INFO:              gensim: Not installed
+2023-03-17 17:34:11,469:INFO:               spacy: Not installed
+2023-03-17 17:34:11,469:INFO:           wordcloud: Not installed
+2023-03-17 17:34:11,469:INFO:            textblob: Not installed
+2023-03-17 17:34:11,469:INFO:               fugue: Not installed
+2023-03-17 17:34:11,469:INFO:           streamlit: Not installed
+2023-03-17 17:34:11,469:INFO:             prophet: 1.1.1
+2023-03-17 17:34:11,469:INFO:None
+2023-03-17 17:34:11,469:INFO:Set up GPU usage.
+2023-03-17 17:34:11,469:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,469:WARNING:cuML is outdated or not found. Required version is >=22.10, got 3.0.0.rc8
+2023-03-17 17:34:11,469:INFO:Set up data.
+2023-03-17 17:34:11,544:INFO:Set up train/test split.
+2023-03-17 17:34:11,563:INFO:Set up index.
+2023-03-17 17:34:11,565:INFO:Set up folding strategy.
+2023-03-17 17:34:11,565:INFO:Assigning column types.
+2023-03-17 17:34:11,569:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-03-17 17:34:11,570:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,610:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-03-17 17:34:11,610:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,611:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,612:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:11,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,632:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,636:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,637:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:11,652:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:11,656:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,696:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-03-17 17:34:11,696:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,697:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,697:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:11,697:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,718:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,723:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,724:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:11,730:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:11,734:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-03-17 17:34:11,735:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,781:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,781:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,782:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:11,782:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,802:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,806:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,807:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:11,828:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:11,831:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,872:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,872:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,872:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:11,872:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,893:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,897:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,898:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:11,909:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:11,912:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-03-17 17:34:11,912:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,955:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,969:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:11,970:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,009:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,014:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,015:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:12,025:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:12,028:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,069:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,069:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,070:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,090:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,095:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,095:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:12,107:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:12,111:INFO:Preparing preprocessing pipeline...
+2023-03-17 17:34:12,114:INFO:Set up simple imputation.
+2023-03-17 17:34:12,117:INFO:Set up encoding of ordinal features.
+2023-03-17 17:34:12,119:INFO:Set up encoding of categorical features.
+2023-03-17 17:34:12,119:INFO:Set up imbalanced handling.
+2023-03-17 17:34:12,119:INFO:Set up feature selection.
+2023-03-17 17:34:12,120:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,160:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,161:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,181:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,185:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:12,186:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:12,193:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:18,677:INFO:Finished creating preprocessing pipeline.
+2023-03-17 17:34:18,693:INFO:Pipeline: Pipeline(memory=Memory(location=/var/folders/wk/1__f0f457zs4shb5sgjd_4x40000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['trips_in_first_30_days',
+                                             'avg_rating_of_driver',
+                                             'avg_surge', 'surge_pct',
+                                             'weekday_pct', 'avg_dist',
+                                             'avg_rating_by_driver'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=-1,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         silent='warn',
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False)
+2023-03-17 17:34:18,693:INFO:Creating final display dataframe.
+2023-03-17 17:34:19,802:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3           Original data shape   
+4        Transformed data shape   
+5   Transformed train set shape   
+6    Transformed test set shape   
+7              Ordinal features   
+8              Numeric features   
+9          Categorical features   
+10                   Preprocess   
+11              Imputation type   
+12           Numeric imputation   
+13       Categorical imputation   
+14     Maximum one-hot encoding   
+15              Encoding method   
+16                Fix imbalance   
+17         Fix imbalance method   
+18            Feature selection   
+19     Feature selection method   
+20  Feature selection estimator   
+21  Number of features selected   
+22               Fold Generator   
+23                  Fold Number   
+24                     CPU Jobs   
+25                      Use GPU   
+26               Log Experiment   
+27              Experiment Name   
+28                          USI   
+
+                                                Value  
+0                                                 123  
+1                                            retained  
+2                                              Binary  
+3                                         (41445, 11)  
+4                                          (39026, 3)  
+5                                          (26592, 3)  
+6                                          (12434, 3)  
+7                                                   1  
+8                                                   7  
+9                                                   2  
+10                                               True  
+11                                             simple  
+12                                               mean  
+13                                               mode  
+14                                                 25  
+15                                               None  
+16                                               True  
+17  TomekLinks(n_jobs=None, sampling_strategy='auto')  
+18                                               True  
+19                                            classic  
+20                                           lightgbm  
+21                                                0.2  
+22                                    StratifiedKFold  
+23                                                 10  
+24                                                 -1  
+25                                               True  
+26                                              False  
+27                                   clf-default-name  
+28                                               f8ca  
+2023-03-17 17:34:19,809:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,872:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,876:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,877:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:19,894:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:19,897:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,937:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,937:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,957:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,961:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-17 17:34:19,962:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:19,971:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:19,974:INFO:setup() successfully completed in 8.51s...............
+2023-03-17 17:34:34,156:INFO:PyCaret ClassificationExperiment
+2023-03-17 17:34:34,156:INFO:Logging name: clf-default-name
+2023-03-17 17:34:34,156:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-03-17 17:34:34,156:INFO:version 3.0.0.rc8
+2023-03-17 17:34:34,156:INFO:Initializing setup()
+2023-03-17 17:34:34,157:INFO:self.USI: 94bc
+2023-03-17 17:34:34,157:INFO:self._variable_keys: {'log_plots_param', 'fix_imbalance', 'data', 'pipeline', 'X_train', 'X_test', 'y', 'n_jobs_param', 'exp_name_log', 'idx', 'X', 'html_param', 'logging_param', 'target_param', 'fold_generator', 'y_train', 'fold_groups_param', 'y_test', '_available_plots', 'gpu_param', 'gpu_n_jobs_param', 'fold_shuffle_param', '_ml_usecase', 'USI', 'memory', 'exp_id', 'seed', 'is_multiclass'}
+2023-03-17 17:34:34,157:INFO:Checking environment
+2023-03-17 17:34:34,157:INFO:python_version: 3.8.16
+2023-03-17 17:34:34,157:INFO:python_build: ('default', 'Jan 17 2023 16:42:09')
+2023-03-17 17:34:34,157:INFO:machine: x86_64
+2023-03-17 17:34:34,157:INFO:platform: macOS-10.16-x86_64-i386-64bit
+2023-03-17 17:34:34,157:INFO:Memory: svmem(total=17179869184, available=706453504, percent=95.9, used=1470373888, free=16015360, active=696344576, inactive=689614848, wired=774029312)
+2023-03-17 17:34:34,157:INFO:Physical Core: 10
+2023-03-17 17:34:34,157:INFO:Logical Core: 10
+2023-03-17 17:34:34,157:INFO:Checking libraries
+2023-03-17 17:34:34,157:INFO:System:
+2023-03-17 17:34:34,157:INFO:    python: 3.8.16 (default, Jan 17 2023, 16:42:09)  [Clang 14.0.6 ]
+2023-03-17 17:34:34,157:INFO:executable: /Users/grant/opt/anaconda3/envs/sbcapstone1/bin/python
+2023-03-17 17:34:34,157:INFO:   machine: macOS-10.16-x86_64-i386-64bit
+2023-03-17 17:34:34,157:INFO:PyCaret required dependencies:
+2023-03-17 17:34:34,157:INFO:                 pip: 22.3.1
+2023-03-17 17:34:34,157:INFO:          setuptools: 65.6.3
+2023-03-17 17:34:34,157:INFO:             pycaret: 3.0.0rc8
+2023-03-17 17:34:34,158:INFO:             IPython: 8.8.0
+2023-03-17 17:34:34,158:INFO:          ipywidgets: 8.0.4
+2023-03-17 17:34:34,158:INFO:                tqdm: 4.64.1
+2023-03-17 17:34:34,158:INFO:               numpy: 1.23.5
+2023-03-17 17:34:34,158:INFO:              pandas: 1.5.3
+2023-03-17 17:34:34,158:INFO:              jinja2: 3.1.2
+2023-03-17 17:34:34,158:INFO:               scipy: 1.10.0
+2023-03-17 17:34:34,158:INFO:              joblib: 1.2.0
+2023-03-17 17:34:34,158:INFO:             sklearn: 1.1.3
+2023-03-17 17:34:34,158:INFO:                pyod: 1.0.7
+2023-03-17 17:34:34,158:INFO:            imblearn: 0.10.1
+2023-03-17 17:34:34,158:INFO:   category_encoders: 2.6.0
+2023-03-17 17:34:34,158:INFO:            lightgbm: 3.3.4
+2023-03-17 17:34:34,158:INFO:               numba: 0.56.4
+2023-03-17 17:34:34,158:INFO:            requests: 2.28.2
+2023-03-17 17:34:34,158:INFO:          matplotlib: 3.6.3
+2023-03-17 17:34:34,158:INFO:          scikitplot: 0.3.7
+2023-03-17 17:34:34,158:INFO:         yellowbrick: 1.5
+2023-03-17 17:34:34,158:INFO:              plotly: 5.12.0
+2023-03-17 17:34:34,158:INFO:             kaleido: 0.2.1
+2023-03-17 17:34:34,158:INFO:         statsmodels: 0.13.5
+2023-03-17 17:34:34,158:INFO:              sktime: 0.15.1
+2023-03-17 17:34:34,158:INFO:               tbats: 1.1.2
+2023-03-17 17:34:34,158:INFO:            pmdarima: 2.0.2
+2023-03-17 17:34:34,158:INFO:              psutil: 5.9.4
+2023-03-17 17:34:34,158:INFO:PyCaret optional dependencies:
+2023-03-17 17:34:34,158:INFO:                shap: Not installed
+2023-03-17 17:34:34,158:INFO:           interpret: Not installed
+2023-03-17 17:34:34,158:INFO:                umap: Not installed
+2023-03-17 17:34:34,158:INFO:    pandas_profiling: Not installed
+2023-03-17 17:34:34,158:INFO:  explainerdashboard: Not installed
+2023-03-17 17:34:34,158:INFO:             autoviz: Not installed
+2023-03-17 17:34:34,158:INFO:           fairlearn: Not installed
+2023-03-17 17:34:34,158:INFO:             xgboost: 1.7.4
+2023-03-17 17:34:34,158:INFO:            catboost: 1.1.1
+2023-03-17 17:34:34,158:INFO:              kmodes: Not installed
+2023-03-17 17:34:34,158:INFO:             mlxtend: Not installed
+2023-03-17 17:34:34,158:INFO:       statsforecast: Not installed
+2023-03-17 17:34:34,158:INFO:        tune_sklearn: Not installed
+2023-03-17 17:34:34,159:INFO:                 ray: Not installed
+2023-03-17 17:34:34,159:INFO:            hyperopt: Not installed
+2023-03-17 17:34:34,159:INFO:              optuna: Not installed
+2023-03-17 17:34:34,159:INFO:               skopt: Not installed
+2023-03-17 17:34:34,159:INFO:              mlflow: Not installed
+2023-03-17 17:34:34,159:INFO:              gradio: Not installed
+2023-03-17 17:34:34,159:INFO:             fastapi: Not installed
+2023-03-17 17:34:34,159:INFO:             uvicorn: Not installed
+2023-03-17 17:34:34,159:INFO:              m2cgen: Not installed
+2023-03-17 17:34:34,159:INFO:           evidently: 0.2.5
+2023-03-17 17:34:34,159:INFO:                nltk: 3.8.1
+2023-03-17 17:34:34,159:INFO:            pyLDAvis: Not installed
+2023-03-17 17:34:34,159:INFO:              gensim: Not installed
+2023-03-17 17:34:34,159:INFO:               spacy: Not installed
+2023-03-17 17:34:34,159:INFO:           wordcloud: Not installed
+2023-03-17 17:34:34,159:INFO:            textblob: Not installed
+2023-03-17 17:34:34,159:INFO:               fugue: Not installed
+2023-03-17 17:34:34,159:INFO:           streamlit: Not installed
+2023-03-17 17:34:34,159:INFO:             prophet: 1.1.1
+2023-03-17 17:34:34,159:INFO:None
+2023-03-17 17:34:34,159:INFO:Set up data.
+2023-03-17 17:34:34,187:INFO:Set up train/test split.
+2023-03-17 17:34:34,199:INFO:Set up index.
+2023-03-17 17:34:34,201:INFO:Set up folding strategy.
+2023-03-17 17:34:34,201:INFO:Assigning column types.
+2023-03-17 17:34:34,204:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-03-17 17:34:34,244:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-03-17 17:34:34,245:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:34,270:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,272:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:34,313:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-03-17 17:34:34,314:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:34,339:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,342:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:34,342:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-03-17 17:34:34,384:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:34,409:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,412:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:34,452:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-03-17 17:34:34,477:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,479:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:34,480:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-03-17 17:34:34,548:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,551:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:34,617:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,619:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:34,620:INFO:Preparing preprocessing pipeline...
+2023-03-17 17:34:34,621:INFO:Set up simple imputation.
+2023-03-17 17:34:34,625:INFO:Set up encoding of ordinal features.
+2023-03-17 17:34:34,626:INFO:Set up encoding of categorical features.
+2023-03-17 17:34:34,626:INFO:Set up imbalanced handling.
+2023-03-17 17:34:34,626:INFO:Set up feature selection.
+2023-03-17 17:34:34,692:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:34,694:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:42,323:INFO:Finished creating preprocessing pipeline.
+2023-03-17 17:34:42,338:INFO:Pipeline: Pipeline(memory=Memory(location=/var/folders/wk/1__f0f457zs4shb5sgjd_4x40000gn/T/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['trips_in_first_30_days',
+                                             'avg_rating_of_driver',
+                                             'avg_surge', 'surge_pct',
+                                             'weekday_pct', 'avg_dist',
+                                             'avg_rating_by_driver'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None...
+                                                                                         learning_rate=0.1,
+                                                                                         max_depth=-1,
+                                                                                         min_child_samples=20,
+                                                                                         min_child_weight=0.001,
+                                                                                         min_split_gain=0.0,
+                                                                                         n_estimators=100,
+                                                                                         n_jobs=-1,
+                                                                                         num_leaves=31,
+                                                                                         objective=None,
+                                                                                         random_state=None,
+                                                                                         reg_alpha=0.0,
+                                                                                         reg_lambda=0.0,
+                                                                                         silent='warn',
+                                                                                         subsample=1.0,
+                                                                                         subsample_for_bin=200000,
+                                                                                         subsample_freq=0),
+                                                                importance_getter='auto',
+                                                                max_features=2,
+                                                                norm_order=1,
+                                                                prefit=False,
+                                                                threshold=-inf)))],
+         verbose=False)
+2023-03-17 17:34:42,338:INFO:Creating final display dataframe.
+2023-03-17 17:34:43,774:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3           Original data shape   
+4        Transformed data shape   
+5   Transformed train set shape   
+6    Transformed test set shape   
+7              Ordinal features   
+8              Numeric features   
+9          Categorical features   
+10                   Preprocess   
+11              Imputation type   
+12           Numeric imputation   
+13       Categorical imputation   
+14     Maximum one-hot encoding   
+15              Encoding method   
+16                Fix imbalance   
+17         Fix imbalance method   
+18            Feature selection   
+19     Feature selection method   
+20  Feature selection estimator   
+21  Number of features selected   
+22               Fold Generator   
+23                  Fold Number   
+24                     CPU Jobs   
+25                      Use GPU   
+26               Log Experiment   
+27              Experiment Name   
+28                          USI   
+
+                                                Value  
+0                                                 123  
+1                                            retained  
+2                                              Binary  
+3                                         (41445, 11)  
+4                                          (39026, 3)  
+5                                          (26592, 3)  
+6                                          (12434, 3)  
+7                                                   1  
+8                                                   7  
+9                                                   2  
+10                                               True  
+11                                             simple  
+12                                               mean  
+13                                               mode  
+14                                                 25  
+15                                               None  
+16                                               True  
+17  TomekLinks(n_jobs=None, sampling_strategy='auto')  
+18                                               True  
+19                                            classic  
+20                                           lightgbm  
+21                                                0.2  
+22                                    StratifiedKFold  
+23                                                 10  
+24                                                 -1  
+25                                              False  
+26                                              False  
+27                                   clf-default-name  
+28                                               94bc  
+2023-03-17 17:34:43,871:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:43,874:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:44,031:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:34:44,034:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:34:44,054:INFO:setup() successfully completed in 9.9s...............
+2023-03-17 17:35:29,762:INFO:gpu_param set to False
+2023-03-17 17:35:29,835:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:35:29,839:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:35:29,908:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-03-17 17:35:29,910:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-17 17:36:28,995:INFO:Initializing compare_models()
+2023-03-17 17:36:28,996:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, include=None, fold=None, round=4, cross_validation=True, sort=AUC, n_select=3, budget_time=None, turbo=False, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'AUC', 'n_select': 3, 'budget_time': None, 'turbo': False, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-03-17 17:36:28,996:INFO:Checking exceptions
+2023-03-17 17:36:29,022:INFO:Preparing display monitor
+2023-03-17 17:36:29,116:INFO:Initializing Logistic Regression
+2023-03-17 17:36:29,117:INFO:Total runtime is 6.016095479329427e-06 minutes
+2023-03-17 17:36:29,121:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:36:29,122:INFO:Initializing create_model()
+2023-03-17 17:36:29,122:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:36:29,122:INFO:Checking exceptions
+2023-03-17 17:36:29,122:INFO:Importing libraries
+2023-03-17 17:36:29,122:INFO:Copying training dataset
+2023-03-17 17:36:29,131:INFO:Defining folds
+2023-03-17 17:36:29,131:INFO:Declaring metric variables
+2023-03-17 17:36:29,135:INFO:Importing untrained model
+2023-03-17 17:36:29,139:INFO:Logistic Regression Imported successfully
+2023-03-17 17:36:29,144:INFO:Starting cross validation
+2023-03-17 17:36:29,160:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:36:35,755:INFO:Calculating mean and std
+2023-03-17 17:36:35,788:INFO:Creating metrics dataframe
+2023-03-17 17:36:35,827:INFO:Uploading results into container
+2023-03-17 17:36:35,828:INFO:Uploading model into container now
+2023-03-17 17:36:35,834:INFO:_master_model_container: 1
+2023-03-17 17:36:35,834:INFO:_display_container: 2
+2023-03-17 17:36:35,842:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-03-17 17:36:35,843:INFO:create_model() successfully completed......................................
+2023-03-17 17:36:36,191:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:36:36,191:INFO:Creating metrics dataframe
+2023-03-17 17:36:36,201:INFO:Initializing K Neighbors Classifier
+2023-03-17 17:36:36,201:INFO:Total runtime is 0.11808625062306723 minutes
+2023-03-17 17:36:36,205:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:36:36,205:INFO:Initializing create_model()
+2023-03-17 17:36:36,205:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:36:36,205:INFO:Checking exceptions
+2023-03-17 17:36:36,205:INFO:Importing libraries
+2023-03-17 17:36:36,205:INFO:Copying training dataset
+2023-03-17 17:36:36,213:INFO:Defining folds
+2023-03-17 17:36:36,213:INFO:Declaring metric variables
+2023-03-17 17:36:36,216:INFO:Importing untrained model
+2023-03-17 17:36:36,219:INFO:K Neighbors Classifier Imported successfully
+2023-03-17 17:36:36,224:INFO:Starting cross validation
+2023-03-17 17:36:36,247:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:36:38,304:INFO:Calculating mean and std
+2023-03-17 17:36:38,311:INFO:Creating metrics dataframe
+2023-03-17 17:36:38,324:INFO:Uploading results into container
+2023-03-17 17:36:38,327:INFO:Uploading model into container now
+2023-03-17 17:36:38,328:INFO:_master_model_container: 2
+2023-03-17 17:36:38,329:INFO:_display_container: 2
+2023-03-17 17:36:38,330:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-03-17 17:36:38,330:INFO:create_model() successfully completed......................................
+2023-03-17 17:36:38,529:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:36:38,529:INFO:Creating metrics dataframe
+2023-03-17 17:36:38,537:INFO:Initializing Naive Bayes
+2023-03-17 17:36:38,537:INFO:Total runtime is 0.15701281627019248 minutes
+2023-03-17 17:36:38,540:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:36:38,540:INFO:Initializing create_model()
+2023-03-17 17:36:38,540:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:36:38,540:INFO:Checking exceptions
+2023-03-17 17:36:38,540:INFO:Importing libraries
+2023-03-17 17:36:38,540:INFO:Copying training dataset
+2023-03-17 17:36:38,547:INFO:Defining folds
+2023-03-17 17:36:38,547:INFO:Declaring metric variables
+2023-03-17 17:36:38,549:INFO:Importing untrained model
+2023-03-17 17:36:38,552:INFO:Naive Bayes Imported successfully
+2023-03-17 17:36:38,557:INFO:Starting cross validation
+2023-03-17 17:36:38,567:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:36:39,225:INFO:Calculating mean and std
+2023-03-17 17:36:39,227:INFO:Creating metrics dataframe
+2023-03-17 17:36:39,230:INFO:Uploading results into container
+2023-03-17 17:36:39,231:INFO:Uploading model into container now
+2023-03-17 17:36:39,231:INFO:_master_model_container: 3
+2023-03-17 17:36:39,231:INFO:_display_container: 2
+2023-03-17 17:36:39,231:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-03-17 17:36:39,231:INFO:create_model() successfully completed......................................
+2023-03-17 17:36:39,375:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:36:39,375:INFO:Creating metrics dataframe
+2023-03-17 17:36:39,382:INFO:Initializing Decision Tree Classifier
+2023-03-17 17:36:39,383:INFO:Total runtime is 0.17110751469930013 minutes
+2023-03-17 17:36:39,386:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:36:39,386:INFO:Initializing create_model()
+2023-03-17 17:36:39,386:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:36:39,386:INFO:Checking exceptions
+2023-03-17 17:36:39,386:INFO:Importing libraries
+2023-03-17 17:36:39,386:INFO:Copying training dataset
+2023-03-17 17:36:39,393:INFO:Defining folds
+2023-03-17 17:36:39,393:INFO:Declaring metric variables
+2023-03-17 17:36:39,397:INFO:Importing untrained model
+2023-03-17 17:36:39,400:INFO:Decision Tree Classifier Imported successfully
+2023-03-17 17:36:39,406:INFO:Starting cross validation
+2023-03-17 17:36:39,416:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:36:40,056:INFO:Calculating mean and std
+2023-03-17 17:36:40,057:INFO:Creating metrics dataframe
+2023-03-17 17:36:40,059:INFO:Uploading results into container
+2023-03-17 17:36:40,060:INFO:Uploading model into container now
+2023-03-17 17:36:40,060:INFO:_master_model_container: 4
+2023-03-17 17:36:40,061:INFO:_display_container: 2
+2023-03-17 17:36:40,061:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=123, splitter='best')
+2023-03-17 17:36:40,061:INFO:create_model() successfully completed......................................
+2023-03-17 17:36:40,210:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:36:40,210:INFO:Creating metrics dataframe
+2023-03-17 17:36:40,218:INFO:Initializing SVM - Linear Kernel
+2023-03-17 17:36:40,218:INFO:Total runtime is 0.18502373298009236 minutes
+2023-03-17 17:36:40,220:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:36:40,220:INFO:Initializing create_model()
+2023-03-17 17:36:40,220:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:36:40,221:INFO:Checking exceptions
+2023-03-17 17:36:40,221:INFO:Importing libraries
+2023-03-17 17:36:40,221:INFO:Copying training dataset
+2023-03-17 17:36:40,229:INFO:Defining folds
+2023-03-17 17:36:40,229:INFO:Declaring metric variables
+2023-03-17 17:36:40,232:INFO:Importing untrained model
+2023-03-17 17:36:40,235:INFO:SVM - Linear Kernel Imported successfully
+2023-03-17 17:36:40,244:INFO:Starting cross validation
+2023-03-17 17:36:40,281:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:36:41,090:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:36:41,133:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:36:41,181:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:36:41,213:INFO:Calculating mean and std
+2023-03-17 17:36:41,214:INFO:Creating metrics dataframe
+2023-03-17 17:36:41,218:INFO:Uploading results into container
+2023-03-17 17:36:41,218:INFO:Uploading model into container now
+2023-03-17 17:36:41,219:INFO:_master_model_container: 5
+2023-03-17 17:36:41,219:INFO:_display_container: 2
+2023-03-17 17:36:41,220:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-03-17 17:36:41,220:INFO:create_model() successfully completed......................................
+2023-03-17 17:36:41,384:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:36:41,384:INFO:Creating metrics dataframe
+2023-03-17 17:36:41,391:INFO:Initializing SVM - Radial Kernel
+2023-03-17 17:36:41,392:INFO:Total runtime is 0.20459245045979818 minutes
+2023-03-17 17:36:41,395:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:36:41,395:INFO:Initializing create_model()
+2023-03-17 17:36:41,395:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=rbfsvm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:36:41,395:INFO:Checking exceptions
+2023-03-17 17:36:41,395:INFO:Importing libraries
+2023-03-17 17:36:41,395:INFO:Copying training dataset
+2023-03-17 17:36:41,401:INFO:Defining folds
+2023-03-17 17:36:41,401:INFO:Declaring metric variables
+2023-03-17 17:36:41,404:INFO:Importing untrained model
+2023-03-17 17:36:41,407:INFO:SVM - Radial Kernel Imported successfully
+2023-03-17 17:36:41,413:INFO:Starting cross validation
+2023-03-17 17:36:41,444:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:40:59,759:INFO:Calculating mean and std
+2023-03-17 17:40:59,764:INFO:Creating metrics dataframe
+2023-03-17 17:40:59,791:INFO:Uploading results into container
+2023-03-17 17:40:59,792:INFO:Uploading model into container now
+2023-03-17 17:40:59,797:INFO:_master_model_container: 6
+2023-03-17 17:40:59,798:INFO:_display_container: 2
+2023-03-17 17:40:59,799:INFO:SVC(C=1.0, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+    max_iter=-1, probability=True, random_state=123, shrinking=True, tol=0.001,
+    verbose=False)
+2023-03-17 17:40:59,799:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:00,212:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:00,212:INFO:Creating metrics dataframe
+2023-03-17 17:41:00,220:INFO:Initializing Gaussian Process Classifier
+2023-03-17 17:41:00,220:INFO:Total runtime is 4.518403482437134 minutes
+2023-03-17 17:41:00,223:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:00,223:INFO:Initializing create_model()
+2023-03-17 17:41:00,223:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=gpc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec38f950d0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:00,224:INFO:Checking exceptions
+2023-03-17 17:41:00,224:INFO:Importing libraries
+2023-03-17 17:41:00,226:INFO:Copying training dataset
+2023-03-17 17:41:00,237:INFO:Defining folds
+2023-03-17 17:41:00,237:INFO:Declaring metric variables
+2023-03-17 17:41:00,240:INFO:Importing untrained model
+2023-03-17 17:41:00,243:INFO:Gaussian Process Classifier Imported successfully
+2023-03-17 17:41:00,249:INFO:Starting cross validation
+2023-03-17 17:41:00,262:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2023-03-17 17:41:38,953:INFO:Initializing compare_models()
+2023-03-17 17:41:38,953:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, include=None, fold=None, round=4, cross_validation=True, sort=AUC, n_select=3, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, 'include': None, 'exclude': ['rbfsvm', 'gpc', 'mlp'], 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'AUC', 'n_select': 3, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=['rbfsvm', 'gpc', 'mlp'])
+2023-03-17 17:41:38,954:INFO:Checking exceptions
+2023-03-17 17:41:38,978:INFO:Preparing display monitor
+2023-03-17 17:41:39,008:INFO:Initializing Logistic Regression
+2023-03-17 17:41:39,008:INFO:Total runtime is 3.715356190999349e-06 minutes
+2023-03-17 17:41:39,011:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:39,012:INFO:Initializing create_model()
+2023-03-17 17:41:39,012:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:39,012:INFO:Checking exceptions
+2023-03-17 17:41:39,012:INFO:Importing libraries
+2023-03-17 17:41:39,012:INFO:Copying training dataset
+2023-03-17 17:41:39,028:INFO:Defining folds
+2023-03-17 17:41:39,028:INFO:Declaring metric variables
+2023-03-17 17:41:39,031:INFO:Importing untrained model
+2023-03-17 17:41:39,039:INFO:Logistic Regression Imported successfully
+2023-03-17 17:41:39,045:INFO:Starting cross validation
+2023-03-17 17:41:39,062:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:43,287:INFO:Calculating mean and std
+2023-03-17 17:41:43,346:INFO:Creating metrics dataframe
+2023-03-17 17:41:43,373:INFO:Uploading results into container
+2023-03-17 17:41:43,378:INFO:Uploading model into container now
+2023-03-17 17:41:43,380:INFO:_master_model_container: 7
+2023-03-17 17:41:43,380:INFO:_display_container: 2
+2023-03-17 17:41:43,382:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-03-17 17:41:43,382:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:44,224:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:44,225:INFO:Creating metrics dataframe
+2023-03-17 17:41:44,232:INFO:Initializing K Neighbors Classifier
+2023-03-17 17:41:44,232:INFO:Total runtime is 0.08707545200983682 minutes
+2023-03-17 17:41:44,235:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:44,235:INFO:Initializing create_model()
+2023-03-17 17:41:44,235:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:44,235:INFO:Checking exceptions
+2023-03-17 17:41:44,235:INFO:Importing libraries
+2023-03-17 17:41:44,235:INFO:Copying training dataset
+2023-03-17 17:41:44,247:INFO:Defining folds
+2023-03-17 17:41:44,247:INFO:Declaring metric variables
+2023-03-17 17:41:44,250:INFO:Importing untrained model
+2023-03-17 17:41:44,253:INFO:K Neighbors Classifier Imported successfully
+2023-03-17 17:41:44,258:INFO:Starting cross validation
+2023-03-17 17:41:44,286:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:45,067:INFO:Calculating mean and std
+2023-03-17 17:41:45,068:INFO:Creating metrics dataframe
+2023-03-17 17:41:45,071:INFO:Uploading results into container
+2023-03-17 17:41:45,072:INFO:Uploading model into container now
+2023-03-17 17:41:45,072:INFO:_master_model_container: 8
+2023-03-17 17:41:45,072:INFO:_display_container: 2
+2023-03-17 17:41:45,072:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-03-17 17:41:45,072:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:45,238:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:45,238:INFO:Creating metrics dataframe
+2023-03-17 17:41:45,245:INFO:Initializing Naive Bayes
+2023-03-17 17:41:45,245:INFO:Total runtime is 0.10395484765370686 minutes
+2023-03-17 17:41:45,247:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:45,248:INFO:Initializing create_model()
+2023-03-17 17:41:45,248:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:45,248:INFO:Checking exceptions
+2023-03-17 17:41:45,248:INFO:Importing libraries
+2023-03-17 17:41:45,248:INFO:Copying training dataset
+2023-03-17 17:41:45,255:INFO:Defining folds
+2023-03-17 17:41:45,256:INFO:Declaring metric variables
+2023-03-17 17:41:45,258:INFO:Importing untrained model
+2023-03-17 17:41:45,262:INFO:Naive Bayes Imported successfully
+2023-03-17 17:41:45,268:INFO:Starting cross validation
+2023-03-17 17:41:45,280:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:45,913:INFO:Calculating mean and std
+2023-03-17 17:41:45,914:INFO:Creating metrics dataframe
+2023-03-17 17:41:45,918:INFO:Uploading results into container
+2023-03-17 17:41:45,918:INFO:Uploading model into container now
+2023-03-17 17:41:45,919:INFO:_master_model_container: 9
+2023-03-17 17:41:45,919:INFO:_display_container: 2
+2023-03-17 17:41:45,919:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-03-17 17:41:45,919:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:46,086:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:46,086:INFO:Creating metrics dataframe
+2023-03-17 17:41:46,094:INFO:Initializing Decision Tree Classifier
+2023-03-17 17:41:46,095:INFO:Total runtime is 0.11811748345692952 minutes
+2023-03-17 17:41:46,097:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:46,097:INFO:Initializing create_model()
+2023-03-17 17:41:46,097:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:46,097:INFO:Checking exceptions
+2023-03-17 17:41:46,097:INFO:Importing libraries
+2023-03-17 17:41:46,097:INFO:Copying training dataset
+2023-03-17 17:41:46,103:INFO:Defining folds
+2023-03-17 17:41:46,103:INFO:Declaring metric variables
+2023-03-17 17:41:46,106:INFO:Importing untrained model
+2023-03-17 17:41:46,109:INFO:Decision Tree Classifier Imported successfully
+2023-03-17 17:41:46,114:INFO:Starting cross validation
+2023-03-17 17:41:46,123:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:46,831:INFO:Calculating mean and std
+2023-03-17 17:41:46,833:INFO:Creating metrics dataframe
+2023-03-17 17:41:46,837:INFO:Uploading results into container
+2023-03-17 17:41:46,838:INFO:Uploading model into container now
+2023-03-17 17:41:46,839:INFO:_master_model_container: 10
+2023-03-17 17:41:46,839:INFO:_display_container: 2
+2023-03-17 17:41:46,839:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=123, splitter='best')
+2023-03-17 17:41:46,840:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:47,043:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:47,043:INFO:Creating metrics dataframe
+2023-03-17 17:41:47,051:INFO:Initializing SVM - Linear Kernel
+2023-03-17 17:41:47,051:INFO:Total runtime is 0.13405581712722778 minutes
+2023-03-17 17:41:47,055:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:47,055:INFO:Initializing create_model()
+2023-03-17 17:41:47,055:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:47,055:INFO:Checking exceptions
+2023-03-17 17:41:47,056:INFO:Importing libraries
+2023-03-17 17:41:47,056:INFO:Copying training dataset
+2023-03-17 17:41:47,061:INFO:Defining folds
+2023-03-17 17:41:47,061:INFO:Declaring metric variables
+2023-03-17 17:41:47,064:INFO:Importing untrained model
+2023-03-17 17:41:47,068:INFO:SVM - Linear Kernel Imported successfully
+2023-03-17 17:41:47,080:INFO:Starting cross validation
+2023-03-17 17:41:47,099:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:47,923:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:41:47,990:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:41:48,016:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:41:48,057:INFO:Calculating mean and std
+2023-03-17 17:41:48,057:INFO:Creating metrics dataframe
+2023-03-17 17:41:48,060:INFO:Uploading results into container
+2023-03-17 17:41:48,061:INFO:Uploading model into container now
+2023-03-17 17:41:48,061:INFO:_master_model_container: 11
+2023-03-17 17:41:48,061:INFO:_display_container: 2
+2023-03-17 17:41:48,062:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-03-17 17:41:48,062:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:48,265:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:48,265:INFO:Creating metrics dataframe
+2023-03-17 17:41:48,272:INFO:Initializing Ridge Classifier
+2023-03-17 17:41:48,272:INFO:Total runtime is 0.1544116695721944 minutes
+2023-03-17 17:41:48,275:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:48,275:INFO:Initializing create_model()
+2023-03-17 17:41:48,275:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:48,275:INFO:Checking exceptions
+2023-03-17 17:41:48,275:INFO:Importing libraries
+2023-03-17 17:41:48,275:INFO:Copying training dataset
+2023-03-17 17:41:48,281:INFO:Defining folds
+2023-03-17 17:41:48,282:INFO:Declaring metric variables
+2023-03-17 17:41:48,284:INFO:Importing untrained model
+2023-03-17 17:41:48,289:INFO:Ridge Classifier Imported successfully
+2023-03-17 17:41:48,296:INFO:Starting cross validation
+2023-03-17 17:41:48,313:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:48,831:INFO:Calculating mean and std
+2023-03-17 17:41:48,832:INFO:Creating metrics dataframe
+2023-03-17 17:41:48,835:INFO:Uploading results into container
+2023-03-17 17:41:48,835:INFO:Uploading model into container now
+2023-03-17 17:41:48,836:INFO:_master_model_container: 12
+2023-03-17 17:41:48,836:INFO:_display_container: 2
+2023-03-17 17:41:48,836:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize='deprecated', positive=False,
+                random_state=123, solver='auto', tol=0.001)
+2023-03-17 17:41:48,836:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:49,000:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:49,000:INFO:Creating metrics dataframe
+2023-03-17 17:41:49,008:INFO:Initializing Random Forest Classifier
+2023-03-17 17:41:49,008:INFO:Total runtime is 0.16667824983596802 minutes
+2023-03-17 17:41:49,010:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:49,011:INFO:Initializing create_model()
+2023-03-17 17:41:49,011:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:49,011:INFO:Checking exceptions
+2023-03-17 17:41:49,011:INFO:Importing libraries
+2023-03-17 17:41:49,011:INFO:Copying training dataset
+2023-03-17 17:41:49,017:INFO:Defining folds
+2023-03-17 17:41:49,017:INFO:Declaring metric variables
+2023-03-17 17:41:49,020:INFO:Importing untrained model
+2023-03-17 17:41:49,023:INFO:Random Forest Classifier Imported successfully
+2023-03-17 17:41:49,029:INFO:Starting cross validation
+2023-03-17 17:41:49,040:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:53,231:INFO:Calculating mean and std
+2023-03-17 17:41:53,241:INFO:Creating metrics dataframe
+2023-03-17 17:41:53,253:INFO:Uploading results into container
+2023-03-17 17:41:53,257:INFO:Uploading model into container now
+2023-03-17 17:41:53,259:INFO:_master_model_container: 13
+2023-03-17 17:41:53,259:INFO:_display_container: 2
+2023-03-17 17:41:53,260:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=123, verbose=0, warm_start=False)
+2023-03-17 17:41:53,260:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:53,625:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:53,625:INFO:Creating metrics dataframe
+2023-03-17 17:41:53,634:INFO:Initializing Quadratic Discriminant Analysis
+2023-03-17 17:41:53,634:INFO:Total runtime is 0.24378246863683065 minutes
+2023-03-17 17:41:53,637:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:53,637:INFO:Initializing create_model()
+2023-03-17 17:41:53,637:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:53,638:INFO:Checking exceptions
+2023-03-17 17:41:53,638:INFO:Importing libraries
+2023-03-17 17:41:53,638:INFO:Copying training dataset
+2023-03-17 17:41:53,646:INFO:Defining folds
+2023-03-17 17:41:53,646:INFO:Declaring metric variables
+2023-03-17 17:41:53,649:INFO:Importing untrained model
+2023-03-17 17:41:53,651:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-03-17 17:41:53,656:INFO:Starting cross validation
+2023-03-17 17:41:53,674:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:54,392:INFO:Calculating mean and std
+2023-03-17 17:41:54,393:INFO:Creating metrics dataframe
+2023-03-17 17:41:54,396:INFO:Uploading results into container
+2023-03-17 17:41:54,397:INFO:Uploading model into container now
+2023-03-17 17:41:54,397:INFO:_master_model_container: 14
+2023-03-17 17:41:54,397:INFO:_display_container: 2
+2023-03-17 17:41:54,398:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-03-17 17:41:54,398:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:54,566:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:54,566:INFO:Creating metrics dataframe
+2023-03-17 17:41:54,574:INFO:Initializing Ada Boost Classifier
+2023-03-17 17:41:54,574:INFO:Total runtime is 0.25944251616795855 minutes
+2023-03-17 17:41:54,576:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:54,577:INFO:Initializing create_model()
+2023-03-17 17:41:54,577:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:54,577:INFO:Checking exceptions
+2023-03-17 17:41:54,577:INFO:Importing libraries
+2023-03-17 17:41:54,577:INFO:Copying training dataset
+2023-03-17 17:41:54,583:INFO:Defining folds
+2023-03-17 17:41:54,583:INFO:Declaring metric variables
+2023-03-17 17:41:54,586:INFO:Importing untrained model
+2023-03-17 17:41:54,589:INFO:Ada Boost Classifier Imported successfully
+2023-03-17 17:41:54,594:INFO:Starting cross validation
+2023-03-17 17:41:54,611:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:55,815:INFO:Calculating mean and std
+2023-03-17 17:41:55,817:INFO:Creating metrics dataframe
+2023-03-17 17:41:55,821:INFO:Uploading results into container
+2023-03-17 17:41:55,822:INFO:Uploading model into container now
+2023-03-17 17:41:55,823:INFO:_master_model_container: 15
+2023-03-17 17:41:55,823:INFO:_display_container: 2
+2023-03-17 17:41:55,824:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=123)
+2023-03-17 17:41:55,824:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:56,009:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:56,009:INFO:Creating metrics dataframe
+2023-03-17 17:41:56,018:INFO:Initializing Gradient Boosting Classifier
+2023-03-17 17:41:56,018:INFO:Total runtime is 0.2835046013196309 minutes
+2023-03-17 17:41:56,021:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:56,021:INFO:Initializing create_model()
+2023-03-17 17:41:56,021:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:56,021:INFO:Checking exceptions
+2023-03-17 17:41:56,021:INFO:Importing libraries
+2023-03-17 17:41:56,021:INFO:Copying training dataset
+2023-03-17 17:41:56,027:INFO:Defining folds
+2023-03-17 17:41:56,028:INFO:Declaring metric variables
+2023-03-17 17:41:56,030:INFO:Importing untrained model
+2023-03-17 17:41:56,034:INFO:Gradient Boosting Classifier Imported successfully
+2023-03-17 17:41:56,039:INFO:Starting cross validation
+2023-03-17 17:41:56,058:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:58,076:INFO:Calculating mean and std
+2023-03-17 17:41:58,077:INFO:Creating metrics dataframe
+2023-03-17 17:41:58,080:INFO:Uploading results into container
+2023-03-17 17:41:58,081:INFO:Uploading model into container now
+2023-03-17 17:41:58,081:INFO:_master_model_container: 16
+2023-03-17 17:41:58,081:INFO:_display_container: 2
+2023-03-17 17:41:58,081:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-03-17 17:41:58,081:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:58,264:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:58,264:INFO:Creating metrics dataframe
+2023-03-17 17:41:58,273:INFO:Initializing Linear Discriminant Analysis
+2023-03-17 17:41:58,273:INFO:Total runtime is 0.32109114726384475 minutes
+2023-03-17 17:41:58,276:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:58,276:INFO:Initializing create_model()
+2023-03-17 17:41:58,276:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:58,276:INFO:Checking exceptions
+2023-03-17 17:41:58,276:INFO:Importing libraries
+2023-03-17 17:41:58,276:INFO:Copying training dataset
+2023-03-17 17:41:58,282:INFO:Defining folds
+2023-03-17 17:41:58,283:INFO:Declaring metric variables
+2023-03-17 17:41:58,285:INFO:Importing untrained model
+2023-03-17 17:41:58,288:INFO:Linear Discriminant Analysis Imported successfully
+2023-03-17 17:41:58,293:INFO:Starting cross validation
+2023-03-17 17:41:58,302:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:41:58,900:INFO:Calculating mean and std
+2023-03-17 17:41:58,901:INFO:Creating metrics dataframe
+2023-03-17 17:41:58,904:INFO:Uploading results into container
+2023-03-17 17:41:58,905:INFO:Uploading model into container now
+2023-03-17 17:41:58,905:INFO:_master_model_container: 17
+2023-03-17 17:41:58,905:INFO:_display_container: 2
+2023-03-17 17:41:58,905:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-03-17 17:41:58,905:INFO:create_model() successfully completed......................................
+2023-03-17 17:41:59,069:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:41:59,070:INFO:Creating metrics dataframe
+2023-03-17 17:41:59,078:INFO:Initializing Extra Trees Classifier
+2023-03-17 17:41:59,079:INFO:Total runtime is 0.334517749150594 minutes
+2023-03-17 17:41:59,081:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:41:59,082:INFO:Initializing create_model()
+2023-03-17 17:41:59,082:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:41:59,082:INFO:Checking exceptions
+2023-03-17 17:41:59,082:INFO:Importing libraries
+2023-03-17 17:41:59,082:INFO:Copying training dataset
+2023-03-17 17:41:59,088:INFO:Defining folds
+2023-03-17 17:41:59,088:INFO:Declaring metric variables
+2023-03-17 17:41:59,091:INFO:Importing untrained model
+2023-03-17 17:41:59,094:INFO:Extra Trees Classifier Imported successfully
+2023-03-17 17:41:59,100:INFO:Starting cross validation
+2023-03-17 17:41:59,113:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:42:02,667:INFO:Calculating mean and std
+2023-03-17 17:42:02,676:INFO:Creating metrics dataframe
+2023-03-17 17:42:02,688:INFO:Uploading results into container
+2023-03-17 17:42:02,690:INFO:Uploading model into container now
+2023-03-17 17:42:02,691:INFO:_master_model_container: 18
+2023-03-17 17:42:02,691:INFO:_display_container: 2
+2023-03-17 17:42:02,692:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=123, verbose=0, warm_start=False)
+2023-03-17 17:42:02,692:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:03,055:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:42:03,055:INFO:Creating metrics dataframe
+2023-03-17 17:42:03,069:INFO:Initializing Extreme Gradient Boosting
+2023-03-17 17:42:03,069:INFO:Total runtime is 0.40102666616439814 minutes
+2023-03-17 17:42:03,072:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:42:03,072:INFO:Initializing create_model()
+2023-03-17 17:42:03,072:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=xgboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:03,072:INFO:Checking exceptions
+2023-03-17 17:42:03,072:INFO:Importing libraries
+2023-03-17 17:42:03,073:INFO:Copying training dataset
+2023-03-17 17:42:03,081:INFO:Defining folds
+2023-03-17 17:42:03,082:INFO:Declaring metric variables
+2023-03-17 17:42:03,084:INFO:Importing untrained model
+2023-03-17 17:42:03,087:INFO:Extreme Gradient Boosting Imported successfully
+2023-03-17 17:42:03,093:INFO:Starting cross validation
+2023-03-17 17:42:03,124:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:42:04,911:INFO:Calculating mean and std
+2023-03-17 17:42:04,913:INFO:Creating metrics dataframe
+2023-03-17 17:42:04,917:INFO:Uploading results into container
+2023-03-17 17:42:04,918:INFO:Uploading model into container now
+2023-03-17 17:42:04,918:INFO:_master_model_container: 19
+2023-03-17 17:42:04,919:INFO:_display_container: 2
+2023-03-17 17:42:04,919:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+              objective='binary:logistic', predictor=None, ...)
+2023-03-17 17:42:04,919:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:05,090:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:42:05,090:INFO:Creating metrics dataframe
+2023-03-17 17:42:05,099:INFO:Initializing Light Gradient Boosting Machine
+2023-03-17 17:42:05,099:INFO:Total runtime is 0.4348546504974365 minutes
+2023-03-17 17:42:05,101:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:42:05,101:INFO:Initializing create_model()
+2023-03-17 17:42:05,101:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:05,101:INFO:Checking exceptions
+2023-03-17 17:42:05,101:INFO:Importing libraries
+2023-03-17 17:42:05,102:INFO:Copying training dataset
+2023-03-17 17:42:05,107:INFO:Defining folds
+2023-03-17 17:42:05,108:INFO:Declaring metric variables
+2023-03-17 17:42:05,111:INFO:Importing untrained model
+2023-03-17 17:42:05,114:INFO:Light Gradient Boosting Machine Imported successfully
+2023-03-17 17:42:05,119:INFO:Starting cross validation
+2023-03-17 17:42:05,125:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:42:05,989:INFO:Calculating mean and std
+2023-03-17 17:42:05,990:INFO:Creating metrics dataframe
+2023-03-17 17:42:05,993:INFO:Uploading results into container
+2023-03-17 17:42:05,994:INFO:Uploading model into container now
+2023-03-17 17:42:05,994:INFO:_master_model_container: 20
+2023-03-17 17:42:05,995:INFO:_display_container: 2
+2023-03-17 17:42:05,995:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-03-17 17:42:05,995:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:06,200:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:42:06,200:INFO:Creating metrics dataframe
+2023-03-17 17:42:06,211:INFO:Initializing CatBoost Classifier
+2023-03-17 17:42:06,212:INFO:Total runtime is 0.4534007668495178 minutes
+2023-03-17 17:42:06,214:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:42:06,215:INFO:Initializing create_model()
+2023-03-17 17:42:06,215:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:06,215:INFO:Checking exceptions
+2023-03-17 17:42:06,215:INFO:Importing libraries
+2023-03-17 17:42:06,215:INFO:Copying training dataset
+2023-03-17 17:42:06,225:INFO:Defining folds
+2023-03-17 17:42:06,225:INFO:Declaring metric variables
+2023-03-17 17:42:06,229:INFO:Importing untrained model
+2023-03-17 17:42:06,233:INFO:CatBoost Classifier Imported successfully
+2023-03-17 17:42:06,238:INFO:Starting cross validation
+2023-03-17 17:42:06,259:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:42:19,928:INFO:Calculating mean and std
+2023-03-17 17:42:19,930:INFO:Creating metrics dataframe
+2023-03-17 17:42:19,938:INFO:Uploading results into container
+2023-03-17 17:42:19,939:INFO:Uploading model into container now
+2023-03-17 17:42:19,943:INFO:_master_model_container: 21
+2023-03-17 17:42:19,943:INFO:_display_container: 2
+2023-03-17 17:42:19,944:INFO:<catboost.core.CatBoostClassifier object at 0x7fec29156ca0>
+2023-03-17 17:42:19,944:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:20,387:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:42:20,387:INFO:Creating metrics dataframe
+2023-03-17 17:42:20,398:INFO:Initializing Dummy Classifier
+2023-03-17 17:42:20,398:INFO:Total runtime is 0.6898398836453755 minutes
+2023-03-17 17:42:20,401:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:42:20,402:INFO:Initializing create_model()
+2023-03-17 17:42:20,402:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5af3dac0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:20,402:INFO:Checking exceptions
+2023-03-17 17:42:20,402:INFO:Importing libraries
+2023-03-17 17:42:20,402:INFO:Copying training dataset
+2023-03-17 17:42:20,411:INFO:Defining folds
+2023-03-17 17:42:20,411:INFO:Declaring metric variables
+2023-03-17 17:42:20,413:INFO:Importing untrained model
+2023-03-17 17:42:20,416:INFO:Dummy Classifier Imported successfully
+2023-03-17 17:42:20,422:INFO:Starting cross validation
+2023-03-17 17:42:20,432:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:42:20,989:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,010:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,016:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,032:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,061:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,077:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,096:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,112:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,148:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,184:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-03-17 17:42:21,188:INFO:Calculating mean and std
+2023-03-17 17:42:21,188:INFO:Creating metrics dataframe
+2023-03-17 17:42:21,191:INFO:Uploading results into container
+2023-03-17 17:42:21,191:INFO:Uploading model into container now
+2023-03-17 17:42:21,192:INFO:_master_model_container: 22
+2023-03-17 17:42:21,192:INFO:_display_container: 2
+2023-03-17 17:42:21,192:INFO:DummyClassifier(constant=None, random_state=123, strategy='prior')
+2023-03-17 17:42:21,192:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:21,358:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:42:21,358:INFO:Creating metrics dataframe
+2023-03-17 17:42:21,374:INFO:Initializing create_model()
+2023-03-17 17:42:21,374:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=<catboost.core.CatBoostClassifier object at 0x7fec29156ca0>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:21,374:INFO:Checking exceptions
+2023-03-17 17:42:21,376:INFO:Importing libraries
+2023-03-17 17:42:21,376:INFO:Copying training dataset
+2023-03-17 17:42:21,382:INFO:Defining folds
+2023-03-17 17:42:21,382:INFO:Declaring metric variables
+2023-03-17 17:42:21,382:INFO:Importing untrained model
+2023-03-17 17:42:21,382:INFO:Declaring custom model
+2023-03-17 17:42:21,382:INFO:CatBoost Classifier Imported successfully
+2023-03-17 17:42:21,401:INFO:Cross validation set to False
+2023-03-17 17:42:21,401:INFO:Fitting Model
+2023-03-17 17:42:34,960:INFO:<catboost.core.CatBoostClassifier object at 0x7fec2913bc40>
+2023-03-17 17:42:34,961:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:35,280:INFO:Initializing create_model()
+2023-03-17 17:42:35,280:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:35,280:INFO:Checking exceptions
+2023-03-17 17:42:35,281:INFO:Importing libraries
+2023-03-17 17:42:35,281:INFO:Copying training dataset
+2023-03-17 17:42:35,289:INFO:Defining folds
+2023-03-17 17:42:35,289:INFO:Declaring metric variables
+2023-03-17 17:42:35,290:INFO:Importing untrained model
+2023-03-17 17:42:35,290:INFO:Declaring custom model
+2023-03-17 17:42:35,290:INFO:Light Gradient Boosting Machine Imported successfully
+2023-03-17 17:42:35,303:INFO:Cross validation set to False
+2023-03-17 17:42:35,304:INFO:Fitting Model
+2023-03-17 17:42:41,463:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-03-17 17:42:41,463:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:41,631:INFO:Initializing create_model()
+2023-03-17 17:42:41,631:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:42:41,631:INFO:Checking exceptions
+2023-03-17 17:42:41,633:INFO:Importing libraries
+2023-03-17 17:42:41,633:INFO:Copying training dataset
+2023-03-17 17:42:41,640:INFO:Defining folds
+2023-03-17 17:42:41,640:INFO:Declaring metric variables
+2023-03-17 17:42:41,640:INFO:Importing untrained model
+2023-03-17 17:42:41,640:INFO:Declaring custom model
+2023-03-17 17:42:41,641:INFO:Gradient Boosting Classifier Imported successfully
+2023-03-17 17:42:41,647:INFO:Cross validation set to False
+2023-03-17 17:42:41,647:INFO:Fitting Model
+2023-03-17 17:42:42,884:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-03-17 17:42:42,886:INFO:create_model() successfully completed......................................
+2023-03-17 17:42:43,070:INFO:_master_model_container: 22
+2023-03-17 17:42:43,071:INFO:_display_container: 2
+2023-03-17 17:42:43,071:INFO:[<catboost.core.CatBoostClassifier object at 0x7fec2913bc40>, LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)]
+2023-03-17 17:42:43,071:INFO:compare_models() successfully completed......................................
+2023-03-17 17:44:15,026:INFO:Initializing plot_model()
+2023-03-17 17:44:15,031:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec2913bc40>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:44:15,033:INFO:Checking exceptions
+2023-03-17 17:44:15,066:INFO:Preloading libraries
+2023-03-17 17:44:15,093:INFO:Copying training dataset
+2023-03-17 17:44:15,093:INFO:Plot type: auc
+2023-03-17 17:44:15,720:INFO:Fitting Model
+2023-03-17 17:44:15,725:INFO:Scoring test/hold-out set
+2023-03-17 17:44:15,961:INFO:Visual Rendered Successfully
+2023-03-17 17:44:16,311:INFO:plot_model() successfully completed......................................
+2023-03-17 17:44:16,312:INFO:Initializing plot_model()
+2023-03-17 17:44:16,312:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:44:16,312:INFO:Checking exceptions
+2023-03-17 17:44:16,317:INFO:Preloading libraries
+2023-03-17 17:44:16,325:INFO:Copying training dataset
+2023-03-17 17:44:16,325:INFO:Plot type: auc
+2023-03-17 17:44:16,882:INFO:Fitting Model
+2023-03-17 17:44:16,883:INFO:Scoring test/hold-out set
+2023-03-17 17:44:17,076:INFO:Visual Rendered Successfully
+2023-03-17 17:44:17,291:INFO:plot_model() successfully completed......................................
+2023-03-17 17:44:17,292:INFO:Initializing plot_model()
+2023-03-17 17:44:17,292:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=123, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:44:17,292:INFO:Checking exceptions
+2023-03-17 17:44:17,298:INFO:Preloading libraries
+2023-03-17 17:44:17,305:INFO:Copying training dataset
+2023-03-17 17:44:17,306:INFO:Plot type: auc
+2023-03-17 17:44:17,860:INFO:Fitting Model
+2023-03-17 17:44:17,861:WARNING:/Users/grant/opt/anaconda3/envs/sbcapstone1/lib/python3.8/site-packages/sklearn/base.py:450: UserWarning:
+
+X does not have valid feature names, but GradientBoostingClassifier was fitted with feature names
+
+
+2023-03-17 17:44:17,861:INFO:Scoring test/hold-out set
+2023-03-17 17:44:18,042:INFO:Visual Rendered Successfully
+2023-03-17 17:44:18,217:INFO:plot_model() successfully completed......................................
+2023-03-17 17:44:38,510:INFO:Initializing create_model()
+2023-03-17 17:44:38,518:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:44:38,520:INFO:Checking exceptions
+2023-03-17 17:44:38,553:INFO:Importing libraries
+2023-03-17 17:44:38,553:INFO:Copying training dataset
+2023-03-17 17:44:38,579:INFO:Defining folds
+2023-03-17 17:44:38,579:INFO:Declaring metric variables
+2023-03-17 17:44:38,585:INFO:Importing untrained model
+2023-03-17 17:44:38,589:INFO:CatBoost Classifier Imported successfully
+2023-03-17 17:44:38,601:INFO:Starting cross validation
+2023-03-17 17:44:38,623:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:44:52,203:INFO:Calculating mean and std
+2023-03-17 17:44:52,213:INFO:Creating metrics dataframe
+2023-03-17 17:44:52,226:INFO:Finalizing model
+2023-03-17 17:45:00,449:INFO:Uploading results into container
+2023-03-17 17:45:00,450:INFO:Uploading model into container now
+2023-03-17 17:45:00,467:INFO:_master_model_container: 23
+2023-03-17 17:45:00,467:INFO:_display_container: 3
+2023-03-17 17:45:00,467:INFO:<catboost.core.CatBoostClassifier object at 0x7fec493813d0>
+2023-03-17 17:45:00,467:INFO:create_model() successfully completed......................................
+2023-03-17 17:45:00,866:INFO:Initializing plot_model()
+2023-03-17 17:45:00,867:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec493813d0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:45:00,867:INFO:Checking exceptions
+2023-03-17 17:45:00,874:INFO:Preloading libraries
+2023-03-17 17:45:00,878:INFO:Copying training dataset
+2023-03-17 17:45:00,878:INFO:Plot type: auc
+2023-03-17 17:45:01,485:INFO:Fitting Model
+2023-03-17 17:45:01,486:INFO:Scoring test/hold-out set
+2023-03-17 17:45:01,646:INFO:Visual Rendered Successfully
+2023-03-17 17:45:01,826:INFO:plot_model() successfully completed......................................
+2023-03-17 17:46:18,875:INFO:Initializing create_model()
+2023-03-17 17:46:18,876:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={'optimize': 'AUC'})
+2023-03-17 17:46:18,877:INFO:Checking exceptions
+2023-03-17 17:46:18,924:INFO:Importing libraries
+2023-03-17 17:46:18,929:INFO:Copying training dataset
+2023-03-17 17:46:18,967:INFO:Defining folds
+2023-03-17 17:46:18,968:INFO:Declaring metric variables
+2023-03-17 17:46:18,973:INFO:Importing untrained model
+2023-03-17 17:46:32,688:INFO:Initializing create_model()
+2023-03-17 17:46:32,691:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:46:32,691:INFO:Checking exceptions
+2023-03-17 17:46:32,716:INFO:Importing libraries
+2023-03-17 17:46:32,717:INFO:Copying training dataset
+2023-03-17 17:46:32,730:INFO:Defining folds
+2023-03-17 17:46:32,731:INFO:Declaring metric variables
+2023-03-17 17:46:32,738:INFO:Importing untrained model
+2023-03-17 17:46:32,745:INFO:CatBoost Classifier Imported successfully
+2023-03-17 17:46:32,759:INFO:Starting cross validation
+2023-03-17 17:46:32,780:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:46:50,326:INFO:Calculating mean and std
+2023-03-17 17:46:50,331:INFO:Creating metrics dataframe
+2023-03-17 17:46:50,356:INFO:Finalizing model
+2023-03-17 17:46:58,704:INFO:Uploading results into container
+2023-03-17 17:46:58,706:INFO:Uploading model into container now
+2023-03-17 17:46:58,717:INFO:_master_model_container: 24
+2023-03-17 17:46:58,717:INFO:_display_container: 4
+2023-03-17 17:46:58,717:INFO:<catboost.core.CatBoostClassifier object at 0x7fec8d2321c0>
+2023-03-17 17:46:58,717:INFO:create_model() successfully completed......................................
+2023-03-17 17:46:59,393:INFO:Initializing plot_model()
+2023-03-17 17:46:59,393:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec8d2321c0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:46:59,393:INFO:Checking exceptions
+2023-03-17 17:46:59,402:INFO:Preloading libraries
+2023-03-17 17:46:59,403:INFO:Copying training dataset
+2023-03-17 17:46:59,403:INFO:Plot type: auc
+2023-03-17 17:46:59,989:INFO:Fitting Model
+2023-03-17 17:46:59,991:INFO:Scoring test/hold-out set
+2023-03-17 17:47:00,167:INFO:Visual Rendered Successfully
+2023-03-17 17:47:00,343:INFO:plot_model() successfully completed......................................
+2023-03-17 17:47:43,672:INFO:Initializing tune_model()
+2023-03-17 17:47:43,672:INFO:tune_model(estimator=<catboost.core.CatBoostClassifier object at 0x7fec8d2321c0>, fold=None, round=4, n_iter=10, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>)
+2023-03-17 17:47:43,672:INFO:Checking exceptions
+2023-03-17 17:47:43,692:INFO:Copying training dataset
+2023-03-17 17:47:43,701:INFO:Checking base model
+2023-03-17 17:47:43,701:INFO:Base model : CatBoost Classifier
+2023-03-17 17:47:43,705:INFO:Declaring metric variables
+2023-03-17 17:47:43,710:INFO:Defining Hyperparameters
+2023-03-17 17:47:43,930:INFO:Tuning with n_jobs=-1
+2023-03-17 17:47:43,930:INFO:Initializing RandomizedSearchCV
+2023-03-17 17:48:02,755:INFO:best_params: {'actual_estimator__random_strength': 0.0, 'actual_estimator__n_estimators': 70, 'actual_estimator__l2_leaf_reg': 7, 'actual_estimator__eta': 0.4, 'actual_estimator__depth': 4}
+2023-03-17 17:48:02,756:INFO:Hyperparameter search completed
+2023-03-17 17:48:02,756:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:48:02,756:INFO:Initializing create_model()
+2023-03-17 17:48:02,757:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=<catboost.core.CatBoostClassifier object at 0x7fec49394eb0>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fec5a921c10>, model_only=True, return_train_score=False, kwargs={'random_strength': 0.0, 'n_estimators': 70, 'l2_leaf_reg': 7, 'eta': 0.4, 'depth': 4})
+2023-03-17 17:48:02,757:INFO:Checking exceptions
+2023-03-17 17:48:02,757:INFO:Importing libraries
+2023-03-17 17:48:02,757:INFO:Copying training dataset
+2023-03-17 17:48:02,763:INFO:Defining folds
+2023-03-17 17:48:02,763:INFO:Declaring metric variables
+2023-03-17 17:48:02,765:INFO:Importing untrained model
+2023-03-17 17:48:02,765:INFO:Declaring custom model
+2023-03-17 17:48:02,768:INFO:CatBoost Classifier Imported successfully
+2023-03-17 17:48:02,773:INFO:Starting cross validation
+2023-03-17 17:48:02,780:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:48:03,620:INFO:Calculating mean and std
+2023-03-17 17:48:03,622:INFO:Creating metrics dataframe
+2023-03-17 17:48:03,626:INFO:Finalizing model
+2023-03-17 17:48:04,091:INFO:Uploading results into container
+2023-03-17 17:48:04,092:INFO:Uploading model into container now
+2023-03-17 17:48:04,093:INFO:_master_model_container: 25
+2023-03-17 17:48:04,093:INFO:_display_container: 5
+2023-03-17 17:48:04,093:INFO:<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>
+2023-03-17 17:48:04,093:INFO:create_model() successfully completed......................................
+2023-03-17 17:48:04,264:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:48:04,264:INFO:choose_better activated
+2023-03-17 17:48:04,267:INFO:SubProcess create_model() called ==================================
+2023-03-17 17:48:04,267:INFO:Initializing create_model()
+2023-03-17 17:48:04,267:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=<catboost.core.CatBoostClassifier object at 0x7fec8d2321c0>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-17 17:48:04,267:INFO:Checking exceptions
+2023-03-17 17:48:04,269:INFO:Importing libraries
+2023-03-17 17:48:04,269:INFO:Copying training dataset
+2023-03-17 17:48:04,274:INFO:Defining folds
+2023-03-17 17:48:04,274:INFO:Declaring metric variables
+2023-03-17 17:48:04,274:INFO:Importing untrained model
+2023-03-17 17:48:04,274:INFO:Declaring custom model
+2023-03-17 17:48:04,274:INFO:CatBoost Classifier Imported successfully
+2023-03-17 17:48:04,274:INFO:Starting cross validation
+2023-03-17 17:48:04,281:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-17 17:48:18,472:INFO:Calculating mean and std
+2023-03-17 17:48:18,472:INFO:Creating metrics dataframe
+2023-03-17 17:48:18,474:INFO:Finalizing model
+2023-03-17 17:48:27,777:INFO:Uploading results into container
+2023-03-17 17:48:27,778:INFO:Uploading model into container now
+2023-03-17 17:48:27,778:INFO:_master_model_container: 26
+2023-03-17 17:48:27,778:INFO:_display_container: 6
+2023-03-17 17:48:27,778:INFO:<catboost.core.CatBoostClassifier object at 0x7fec99a96b80>
+2023-03-17 17:48:27,778:INFO:create_model() successfully completed......................................
+2023-03-17 17:48:27,958:INFO:SubProcess create_model() end ==================================
+2023-03-17 17:48:27,959:INFO:<catboost.core.CatBoostClassifier object at 0x7fec99a96b80> result for AUC is 0.7611
+2023-03-17 17:48:27,959:INFO:<catboost.core.CatBoostClassifier object at 0x7fec4939afd0> result for AUC is 0.7622
+2023-03-17 17:48:27,959:INFO:<catboost.core.CatBoostClassifier object at 0x7fec4939afd0> is best model
+2023-03-17 17:48:27,959:INFO:choose_better completed
+2023-03-17 17:48:27,966:INFO:_master_model_container: 26
+2023-03-17 17:48:27,967:INFO:_display_container: 5
+2023-03-17 17:48:27,967:INFO:<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>
+2023-03-17 17:48:27,967:INFO:tune_model() successfully completed......................................
+2023-03-17 17:49:16,039:INFO:Initializing plot_model()
+2023-03-17 17:49:16,040:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:49:16,040:INFO:Checking exceptions
+2023-03-17 17:49:16,048:INFO:Preloading libraries
+2023-03-17 17:49:16,049:INFO:Copying training dataset
+2023-03-17 17:49:16,049:INFO:Plot type: auc
+2023-03-17 17:49:16,622:INFO:Fitting Model
+2023-03-17 17:49:16,623:INFO:Scoring test/hold-out set
+2023-03-17 17:49:16,775:INFO:Visual Rendered Successfully
+2023-03-17 17:49:16,967:INFO:plot_model() successfully completed......................................
+2023-03-17 17:50:10,912:INFO:Initializing plot_model()
+2023-03-17 17:50:10,913:INFO:plot_model(plot=class_report, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:50:10,913:INFO:Checking exceptions
+2023-03-17 17:50:10,918:INFO:Preloading libraries
+2023-03-17 17:50:10,918:INFO:Copying training dataset
+2023-03-17 17:50:10,918:INFO:Plot type: class_report
+2023-03-17 17:50:11,496:INFO:Fitting Model
+2023-03-17 17:50:11,497:INFO:Scoring test/hold-out set
+2023-03-17 17:50:11,656:INFO:Visual Rendered Successfully
+2023-03-17 17:50:11,827:INFO:plot_model() successfully completed......................................
+2023-03-17 17:50:31,842:INFO:Initializing predict_model()
+2023-03-17 17:50:31,842:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, estimator=<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>, probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fec6a56ed30>)
+2023-03-17 17:50:31,842:INFO:Checking exceptions
+2023-03-17 17:50:31,843:INFO:Preloading libraries
+2023-03-17 17:52:03,582:INFO:Initializing plot_model()
+2023-03-17 17:52:03,584:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:52:03,584:INFO:Checking exceptions
+2023-03-17 17:52:03,605:INFO:Preloading libraries
+2023-03-17 17:52:03,606:INFO:Copying training dataset
+2023-03-17 17:52:03,607:INFO:Plot type: confusion_matrix
+2023-03-17 17:52:04,191:INFO:Fitting Model
+2023-03-17 17:52:04,193:INFO:Scoring test/hold-out set
+2023-03-17 17:52:04,306:INFO:Visual Rendered Successfully
+2023-03-17 17:52:04,640:INFO:plot_model() successfully completed......................................
+2023-03-17 17:52:14,374:INFO:Initializing plot_model()
+2023-03-17 17:52:14,375:INFO:plot_model(plot=feature, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostClassifier object at 0x7fec4939afd0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fec397c6700>, system=True)
+2023-03-17 17:52:14,375:INFO:Checking exceptions
+2023-03-17 17:52:14,380:INFO:Preloading libraries
+2023-03-17 17:52:14,381:INFO:Copying training dataset
+2023-03-17 17:52:14,381:INFO:Plot type: feature
+2023-03-17 17:52:14,381:WARNING:No coef_ found. Trying feature_importances_
+2023-03-17 17:52:14,675:INFO:Visual Rendered Successfully
+2023-03-17 17:52:14,842:INFO:plot_model() successfully completed......................................
